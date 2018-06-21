@@ -31,14 +31,6 @@ class Link extends Entity
      * @var array
      */
     protected $_accessible = [
-        'model' => true,
-        'foreign_key' => true,
-        'title' => true,
-        'url' => true,
-        'options' => true,
-        'position' => true,
-        'created' => true,
-        'modified' => true,
-        'phinxlog' => true
+        '*' => true,
     ];
 }

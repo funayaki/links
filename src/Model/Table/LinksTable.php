@@ -77,13 +77,11 @@ class LinksTable extends Table
         $validator
             ->scalar('url')
             ->maxLength('url', 150)
-            ->requirePresence('url', 'create')
-            ->notEmpty('url');
+            ->allowEmpty('url');
 
         $validator
             ->scalar('options')
-            ->requirePresence('options', 'create')
-            ->notEmpty('options');
+            ->allowEmpty('options');
 
         $validator
             ->integer('position')
